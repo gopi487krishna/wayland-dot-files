@@ -1,0 +1,4 @@
+#!/bin/bash
+grim -l 0 -g "$(slurp)"  "/tmp/tmp_screenshot.png"
+FILENAME=`zenity --entry  --text 'Save Screenshot as :'`
+mv /tmp/tmp_screenshot.png ${HOME}/screenshots/${FILENAME}.png
